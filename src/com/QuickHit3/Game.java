@@ -1,6 +1,4 @@
 
-
-
 package com.QuickHit3;
 
 import java.util.Date;
