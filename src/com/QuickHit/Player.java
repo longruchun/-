@@ -1,4 +1,4 @@
-package com.QuickHit;
+ package com.QuickHit;
 
 import java.util.Scanner;
 
