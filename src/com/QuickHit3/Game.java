@@ -1,8 +1,7 @@
 
-
-
 package com.QuickHit3;
 
+import java.io.PrintStream;
 import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
@@ -16,6 +15,9 @@ public class Game {
 	
 	
 	long currentTimespam=0;
+
+
+	private PrintStream sb;
 	
 	
 	

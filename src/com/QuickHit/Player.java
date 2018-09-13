@@ -1,99 +1,77 @@
-/*package com.QuickHit;
+ package com.QuickHit;
 
 import java.util.Scanner;
 
+import com.QuickHit2.LevelHelper;
+
 public class Player {
-   private int levelNo;//级别
-   private  int   curScore;//当前积分
-   private  long startTime;//开始时间
-   private  int   elapsedTime;//已用时间
-   
-   
-   
-   
-   public int getLevelNo() {
-	return levelNo;
-}
-
-
-
-
-public void setLevelNo(int levelNo) {
-	this.levelNo = levelNo;
-}
-
-
-
-
-public int getCurScore() {
-	return curScore;
-}
-
-
-
-
-public void setCurScore(int curScore) {
-	this.curScore = curScore;
-}
-
-
-
-
-public long getStartTime() {
-	return startTime;
-}
-
-
-
-
-public void setStartTime(long startTime) {
-	this.startTime = startTime;
-}
-
-
-
-
-public int getElapsedTime() {
-	return elapsedTime;
-}
-
-
-
-
-public void setElapsedTime(int elapsedTime) {
-	this.elapsedTime = elapsedTime;
-}
-
-
-
-
-public void play() {
-	  
+	String name;// 姓名
+	int LevelNo;// 当前玩家所处级别
+	long beginDate;// 本级别开始时间
+	int score;//玩家当前积分
 	
-	Game game = new Game(this);
-	Scanner input = new Scanner(System.in);
-	// 外层循环，循环一次级别晋一级
-	for (int i = 0; i < LevelParam.levels.length; i++) {
-		// 1、 晋级
-		this.levelNo += 1;
-		// 2、 晋级后计时清零,积分清零
-		this.startTime = System.currentTimeMillis();
-		this.curScore = 0;
-		// 3、 内层循环，循环一次完成一次字符串的输出、输入、比较
-		for (int j = 0; j < LevelParam.levels[levelNo-1].; j++) {
-			// 3.1、游戏输出字符串
-			String outStr = game.printStr();
-			// 3.2、接收用户输入
-			String inStr = input.next();
-			// 3.3、游戏判断玩家输入是否正确，并输出相应结果信息
-			game.printResult(outStr, inStr);
-		}
+	
+
+	public int getScore() {
+		return score;
 	}
-	   
-   }
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public Player() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Player(String name, int levelNo) {
+		this.name = name;
+		LevelNo = levelNo;
+	}
+
+	
+
+	public Player(String name, int levelNo, long beginDate, int score) {
+		super();
+		this.name = name;
+		LevelNo = levelNo;
+		this.beginDate = beginDate;
+		this.score = score;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getLevelNo() {
+		return LevelNo;
+	}
+
+	public void setLevelNo(int levelNo) {
+		LevelNo = levelNo;
+	}
+
+	public long getBeginDate() {
+		return beginDate;
+	}
+
+	public void setBeginDate(long beginDate) {
+		this.beginDate = beginDate;
+	}
+
 	
 	
+	
+	boolean isPassLevel() {
+		int times=score/LevelHelper.levels[LevelNo-1].getPerScore();
+		return times>=LevelHelper.levels[LevelNo-1].getStrTimes();
+	}
+
 	
 	
 }
-*/

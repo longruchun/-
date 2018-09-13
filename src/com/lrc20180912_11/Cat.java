@@ -7,7 +7,7 @@ public class Cat extends Animal implements Terrestrial {
 		this.legNum = legNum;
 	}
 	public void shout() {
-		System.out.println("ίχίχίχ‘­‘­");
+		System.out.println("ίχίχίχ");
 	}
 	public int getLegNum() {
 		return legNum;		
