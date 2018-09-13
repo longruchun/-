@@ -5,7 +5,7 @@ public class Dolphin extends Animal {
 		super(name);		
 	}
 	public void shout() {
-		System.out.println("∫£Î‡“Ù°≠°≠");
+		System.out.println("∫£Î‡“Ù");
 
 	}	
 }

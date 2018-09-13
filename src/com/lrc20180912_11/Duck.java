@@ -8,7 +8,7 @@ public class Duck extends Animal implements Terrestrial {
 		this.legNum = legNum;
 	}
 	public void shout() {
-		System.out.println("限限限´´");
+		System.out.println("限限限");
 	}
 	public int getLegNum() {
 		return legNum;
