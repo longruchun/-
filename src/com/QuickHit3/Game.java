@@ -65,7 +65,6 @@ public class Game {
 		return word.equals(currentWord);
 	}
 	
-	//开始游戏方法
 	void playing() {
 		//开始游戏
 		Scanner input=new Scanner(System.in);
@@ -84,9 +83,6 @@ public class Game {
 							System.out.println("对不起，你输入太慢.Game Over");
 						}else {
 							player.setScore(player.getScore()+LevelHelper.levels[player.getLevelNo()-1].getPerScore());
-							//如果正确，则要在屏幕输出：输入正确    当前级别    当前积分   当前级别已用时间
-							//由于是一个长字符串， 我们声明一个字符串来拼接
-							StringBuffer sb=new StringBuffer("输入正确 ");
 							sb.append("当前级别:"+player.getLevelNo()+" ");
 							sb.append("当前积分:"+player.getScore()+" ");
 							
