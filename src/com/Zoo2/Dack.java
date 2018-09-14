@@ -2,7 +2,7 @@ package com.Zoo2;
 
 public class Dack extends Animal {
 	private String name;
-	   private int legNum;
+	private int legNum;
 	@Override
 	public void Shout() {
 		// TODO Auto-generated method stub

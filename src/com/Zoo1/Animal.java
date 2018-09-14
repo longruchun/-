@@ -1,7 +1,7 @@
 package com.Zoo1;
 
 public class Animal {
-   private String name;
+   private String name;//动物的名字
    private    int    legNum;//腿的数量
 public Animal(String name, int legNum) {
 	super();

@@ -1,9 +1,9 @@
 package com.lrc20180914;
 
 public class DVD {
-   String filmNam;
-   String  status;
-   static DVD  _dvd;
+   String filmNam;//电影名字
+   String  status;//电影的状态
+   static DVD  _dvd;//实例化一个静态DVD对象
    
    
 private DVD() {

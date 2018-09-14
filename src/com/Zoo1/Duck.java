@@ -1,8 +1,8 @@
 package com.Zoo1;
 
 public class Duck extends Animal {
-   private   String name;
-	private  int legNum;
+   private   String name;//鸭子的名字
+	private  int legNum;//鸭子的腿的数量
 	
 	
 	public void shout() {

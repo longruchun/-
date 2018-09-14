@@ -9,12 +9,12 @@ public class Test {
 		animals[2] = new Dolphin("海豚");
 		System.out.println("动物名字\t\t腿的条数\t\t动物叫");
 		for (int i = 0; i < animals.length; i++){
-			if (animals[i] instanceof Terrestrial) {//判断是否实现了接口
+			if (animals[i] instanceof Terrestrial) {//判断是否实现了接口其中instanceof是一个运算符
 				String name = animals[i].getName();
 				int legNum = ((Terrestrial) animals[i]).getLegNum();
 				System.out.print(name + "\t\t" + legNum + "\t\t");
 				animals[i].shout();
-			} else {
+			} else {//没有实现接口的时候
 				String name = animals[i].getName();
 				System.out.print(name + "\t\t" + 0 + "\t\t");
 				animals[i].shout();

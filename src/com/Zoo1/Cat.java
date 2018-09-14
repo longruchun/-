@@ -1,8 +1,8 @@
 package com.Zoo1;
 
 public class Cat extends Animal {
-   private String name;
-   private int legNum;
+   private String name;//猫的名字
+   private int legNum;//猫的腿的条数
 public Cat(String name, int legNum, String name2, int legNum2) {
 	super(name, legNum);
 	name = name2;
