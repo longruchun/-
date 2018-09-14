@@ -11,7 +11,7 @@ public class Test1 {
 		System.out.println("请输入除数");
 		int num2=input.nextInt();
 		
-		System.out.println(String.format("%d/%d=%d", num1));
+		System.out.println(String.format("%d/%d=%d", num1,num2,num1/num2));
 		System.out.println("感谢你使用本程序");
 	}
 	

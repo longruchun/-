@@ -2,16 +2,12 @@ package com.lrc20180913;
 
 import java.util.Scanner;
 
-/**
- * 测试try-catch-finally的使用。
- * @author 北大青鸟
- */
 public class TestException1 {
 	public static void main(String[] args) {
 		System.out.print("请输入课程代号(1～3之间的数字):");
-		Scanner in = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		try {
-			int courseCode = in.nextInt();
+			int courseCode = input.nextInt();
 			switch (courseCode) {
 			case 1:
 				System.out.println("C#编程");

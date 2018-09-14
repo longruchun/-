@@ -7,7 +7,7 @@ public class Test3 {
 	
 	   try {
 		   
-		   Scanner input=new Scanner(System.in);
+		  Scanner input=new Scanner(System.in);
 			System.out.println("请输入被除数");
 			int num1=input.nextInt();
 			System.out.println("请输入除数");
