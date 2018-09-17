@@ -2,6 +2,7 @@ package com.lrc20180917_1;
 
 import java.awt.List;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Test {
 
@@ -12,7 +13,7 @@ public class Test {
   Penguin p3=new Penguin("tutu","Q仔");	
   Penguin p4=new Penguin("kangkang","Q妹");	
   
-   ArrayList pgs=new ArrayList(); 
+   ArrayList<Penguin> pgs=new ArrayList<Penguin>(); 
    pgs.add(p1);
    pgs.add(p2);
    pgs.add(p3);
@@ -20,16 +21,14 @@ public class Test {
    System.out.println("企鹅数量是"+pgs.size()+"个");
    System.out.println("删除之前企鹅的信息如下");
    
-   for (int i = 0; i < pgs.size(); i++) {
-	   
-	   Penguin p5= (Penguin)pgs.get(i);
-	   System.out.println(p5.getName()+"\t" +p5.getSex()    );
-	   
-	   
-	   
-	   
+   Iterator<Penguin> it=pgs.iterator();
+   while (it.hasNext()) {
+	Penguin penguin = (Penguin) it.next();
+	
+	System.out.println(penguin.getName()+"\t"+penguin.getSex());
 	
 }
+   
    
    
    
