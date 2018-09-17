@@ -30,7 +30,7 @@ public class Test {
 	     	System.out.println(ps.getName()+"\t"+ps.getSex());
 				
 			}        
-	     System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+	    
 	     
 	     
 	     if (p.contains("奇奇")) {
@@ -39,7 +39,7 @@ public class Test {
 	 		System.out.println("数组中没有奇奇");
 	 	} 
 	         
-	     System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+	    
 	     p.remove(0);
 	     p.remove(1);
 	     
