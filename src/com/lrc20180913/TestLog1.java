@@ -2,10 +2,6 @@
 
 import java.util.Scanner;
 import org.apache.log4j.Logger;
-*//**
- * 使用log4j输出异常信息到控制台。
- * @author 北大青鸟
- *//*
 public class TestLog1{
 	private static Logger logger=
 		Logger.getLogger(TestLog1.class.getName());
