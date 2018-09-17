@@ -27,7 +27,7 @@ public class Test6 {
 	   try {
 		  int[] arrayRefVar = new int[5];
 		  
-		  for (int i = 0; i < arrayRefVar.length+5; i++) {
+		  for (int i = 0; i < arrayRefVar.length; i++) {
 			System.out.println(i);
 		}
 		   
