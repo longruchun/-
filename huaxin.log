@@ -3,3 +3,6 @@
 2018-09-17 10:44:36 com.lrc20180916_1.Test1.main(Test1.java:17) Test1.java DEBUG 除数
 2018-09-17 10:44:39 com.lrc20180916_1.Test1.main(Test1.java:20) Test1.java DEBUG 除数
 2018-09-17 10:44:39 com.lrc20180916_1.Test1.main(Test1.java:22) Test1.java DEBUG 结果
+2018-09-17 10:49:29 com.lrc20180916_1.Test1.main(Test1.java:17) Test1.java DEBUG 被除数除数100
+2018-09-17 10:49:33 com.lrc20180916_1.Test1.main(Test1.java:20) Test1.java DEBUG 除数56
+2018-09-17 10:49:33 com.lrc20180916_1.Test1.main(Test1.java:22) Test1.java DEBUG 结果156
