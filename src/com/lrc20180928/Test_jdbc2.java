@@ -5,8 +5,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
-public class Test_jdbc {
+public class Test_jdbc2 {
 	public static void main(String[] args) {
 
 		try {
@@ -19,25 +20,45 @@ public class Test_jdbc {
 			e.printStackTrace();
 		}
       
+		
 		Connection conn=null;
 		Statement  stmt=null;
 		ResultSet rs=null;
 		
+		
 		try {
 			String url="jdbc:mysql://localhost:3306/myschool";
 			conn=DriverManager.getConnection(url, "root", "root");//链接到数据库
-            stmt=conn.createStatement();
+            /*stmt=conn.createStatement();
 			
-			StringBuffer sql=new StringBuffer("insert into student(studentNo,loginpwd,sex,studentName,gradeid,phone,Address,Borndate,email)");
+			String sql="select * from student";
+			rs=stmt.executeQuery(sql);
 			
-            sql.append("values('20160401061','1234','男',1,'1234','小河','1996-04-22','1430468717@qq.com'         )");
-            
-            int rel=stmt.executeUpdate(sql.toString());
-            if (rel==1) {
-				System.out.println("插入數據成功");
+		    while (rs.next()) {
+		    	String str=rs.getString("studentNo")+"\t"+rs.getString("studentName")+"\t"+rs.getString("Address");
+				System.out.println(str);
+				
+			}*/
+			stmt=conn.createStatement();
+			Scanner input=new Scanner(System.in);
+			System.out.println("请输入登錄用戶姓名");
+			String name=input.next();
+			
+			System.out.println("请输入登錄用戶密碼");
+			String pwd=input.next();
+			
+			
+			String sql="select*from student where  StudentName='" +name+"'and Loginpwd='"+pwd+"'";
+			rs=stmt.executeQuery(sql);
+			if (rs.next()) {
+				System.out.println("登錄成功");
 			} else {
-                 System.out.println("插入數據失敗");
+                System.out.println("登錄失敗");
 			}
+			
+			
+			
+			
 		    
 			
 			

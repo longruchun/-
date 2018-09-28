@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Test_jdbc {
+public class Test_jdbc3 {
 	public static void main(String[] args) {
 
 		try {
@@ -28,15 +28,13 @@ public class Test_jdbc {
 			conn=DriverManager.getConnection(url, "root", "root");//链接到数据库
             stmt=conn.createStatement();
 			
-			StringBuffer sql=new StringBuffer("insert into student(studentNo,loginpwd,sex,studentName,gradeid,phone,Address,Borndate,email)");
+			String sql="select * from student";
+			rs=stmt.executeQuery(sql);
 			
-            sql.append("values('20160401061','1234','男',1,'1234','小河','1996-04-22','1430468717@qq.com'         )");
-            
-            int rel=stmt.executeUpdate(sql.toString());
-            if (rel==1) {
-				System.out.println("插入數據成功");
-			} else {
-                 System.out.println("插入數據失敗");
+		    while (rs.next()) {
+		    	String str=rs.getString("studentNo")+"\t"+rs.getString("studentName")+"\t"+rs.getString("Address");
+				System.out.println(str);
+				
 			}
 		    
 			
