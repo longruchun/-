@@ -2,7 +2,7 @@ package com.lrc20180929;
 
 import java.util.List;
 
-import p20180929_dao_demo.grade;
+import com.lrc20180929_2.grade;
 
 public interface Igrade {
      int add(Grade ga);//Ôö¼Ó

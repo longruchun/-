@@ -1,4 +1,4 @@
-package p20180929_dao_demo;
+package com.lrc20180929_2;
 
 public class grade {
 	int gradeid;

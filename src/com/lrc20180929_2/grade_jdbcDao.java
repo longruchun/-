@@ -1,4 +1,4 @@
-package p20180929_dao_demo;
+package com.lrc20180929_2;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
