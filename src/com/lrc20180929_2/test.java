@@ -20,10 +20,10 @@ public class test {
 		
 		while(true) {
 			System.out.println("======年级维护菜单======");
-			System.out.println("1 添加年级");
-			System.out.println("2 修改年级");
-			System.out.println("3 删除年级");
-			System.out.println("4 查看所有年级");
+			System.out.println("1 添加");
+			System.out.println("2 修改");
+			System.out.println("3 删除");
+			System.out.println("4 查看所有信息");
 			System.out.println("0 退出");
 			System.out.println("---------------------");
 			System.out.println("请选择:");
@@ -35,13 +35,13 @@ public class test {
 			case 0:
 				break;
 			case 1:
-				System.out.println("请输入所级名称 :");
+				System.out.println("请输入要添加的年级名称 :");
 				gradeName=input.next();
 				ga=new grade(gradeName);
 				dao.add(ga);
 				continue;
 			case 2:
-				System.out.println("请输入所级编号 :");
+				System.out.println("请输入年级编号 :");
 				gradeid=input.nextInt();
 				System.out.println("请输入要修改的年级名称 :");
 				gradeName=input.next();

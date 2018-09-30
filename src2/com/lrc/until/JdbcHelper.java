@@ -1,4 +1,4 @@
-package com.lrc20180929_2;
+package com.lrc.until;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,8 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class jdbcHelper {
-   
+import com.lrc20180929_2.grade;
+
+public class JdbcHelper {
+
 	static Connection conn=null;
 	static String driver="com.mysql.jdbc.Driver";
 	static String url="jdbc:mysql://localhost:3306/myschool";
@@ -107,4 +109,9 @@ static {
 		
 		return list;
 	}
+	
+	
+	
+	
+	
 }
