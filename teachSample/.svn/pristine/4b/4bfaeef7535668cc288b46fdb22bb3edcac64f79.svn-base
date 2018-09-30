@@ -1,0 +1,26 @@
+package com.shaodq.chapter2.d20180730.parameterDemo;
+
+public class Customer {
+   String[] cus=new String[10];
+   
+   public void add_cus(String name){
+	   //方法的用途：就是将形参所规定的name存入数组
+	   for(int i=0;i<cus.length;i++){
+		   if(cus[i]==null){
+			   cus[i]=name;
+			   break;
+		   }
+	   }
+   }
+   
+   public void show(){
+	   for(int i=0;i<cus.length;i++){
+		   if(cus[i]==null){
+			   break;
+		   }   
+	        
+		   System.out.println(cus[i]);
+		   
+	   }
+   }
+}

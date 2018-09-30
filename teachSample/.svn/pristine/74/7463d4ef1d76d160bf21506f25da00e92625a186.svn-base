@@ -1,0 +1,27 @@
+package com.wangkai;
+
+import java.util.Scanner;
+
+public class QueesMachineExport {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		QueesMachine or=new QueesMachine();
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("请输入一个价格范围:");
+		or.num=input.nextInt();
+		
+		
+		or.initial();
+		for(int i=0;i<3;i++){
+			System.out.println("猜测"+or.cj+"的价格");
+			or.x=input.nextInt();
+			
+			System.out.println(or.x);
+			or.guess();
+		}
+		
+	}
+
+}

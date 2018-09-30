@@ -1,0 +1,15 @@
+package com.wangkai;
+
+import java.util.Scanner;
+
+public class SeasesEsport {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Season ch=new Season();
+		//ch.month=12;
+		ch.word();
+	}
+
+}
