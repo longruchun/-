@@ -2,23 +2,23 @@ package com.hxzy.biz_implements;
 
 import java.util.List;
 
-import com.hxzy.biz_interface.IsubjectBiz;
-import com.hxzy.dao_implements.subjectDao_jdbcImpl;
-import com.hxzy.dao_interface.IsubjectDao;
-import com.hxzy.entity.subject;
+import com.hxzy.biz_interface.IgradeBiz;
+import com.hxzy.dao_implements.gradeDao_jdbcImpl;
+import com.hxzy.dao_interface.IgradeDao;
+import com.hxzy.entity.grade;
 
-public class subjectBiz_jdbcImpl implements IsubjectBiz {
+public class gradeBiz_jdbcImpl implements IgradeBiz {
 
-	IsubjectDao dao=new subjectDao_jdbcImpl();
+	IgradeDao dao=new gradeDao_jdbcImpl();
 	
 	@Override
-	public int add(subject t) {
+	public int add(grade t) {
 		// TODO Auto-generated method stub
 		return dao.add(t);
 	}
 
 	@Override
-	public int Update(subject t) {
+	public int Update(grade t) {
 		// TODO Auto-generated method stub
 		return dao.Update(t);
 	}
@@ -30,10 +30,9 @@ public class subjectBiz_jdbcImpl implements IsubjectBiz {
 	}
 
 	@Override
-	public List<subject> getAll() {
+	public List<grade> getAll() {
 		// TODO Auto-generated method stub
 		return dao.getAll();
 	}
 
 }
-让中国发展更好
