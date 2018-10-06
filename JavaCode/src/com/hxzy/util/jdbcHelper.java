@@ -16,7 +16,7 @@ public class jdbcHelper {
     static String driver="com.mysql.jdbc.Driver";
     static String url="jdbc:mysql://localhost:3306/myschool";
     static String user="root";
-    static String pwd="root";
+    static String pwd="long1996422";
     
     static Connection conn=null;
     static PreparedStatement pstmt=null;
