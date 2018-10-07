@@ -1,4 +1,4 @@
-package com.hxzy.util;
+package com.lrc.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;

@@ -1,4 +1,4 @@
-package com.hxzy.dao_implements;
+package com.lrc.dao_implements;
 
 import java.util.List;
 

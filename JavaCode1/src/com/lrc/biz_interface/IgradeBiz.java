@@ -1,4 +1,4 @@
-package com.hxzy.biz_interface;
+package com.lrc.biz_interface;
 
 import com.hxzy.entity.grade;
 

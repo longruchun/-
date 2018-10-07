@@ -1,6 +1,6 @@
-package com.hxzy.dao_interface;
+package com.lrc.dao_interface;
 
-import com.hxzy.entity.subject;
+import com.lrc.entity.subject;
 
 public interface IsubjectDao extends IBaseDao<subject>{
 

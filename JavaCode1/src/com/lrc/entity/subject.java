@@ -1,4 +1,4 @@
-package com.hxzy.entity;
+package com.lrc.entity;
 
 public class subject {
    int subjectNo;
