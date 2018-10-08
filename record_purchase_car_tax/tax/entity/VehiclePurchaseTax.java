@@ -5,29 +5,17 @@ import java.util.Date;
 
 public class VehiclePurchaseTax implements java.io.Serializable {
 
-	private static final long serialVersionUID = -5870970190753783148L;
-	private String idCard; // 车主身份证号码
-	private Date purcharseTime;// 购车日期
-	private String identifier;// 车辆识别码
+	 static final long serialVersionUID = -5870970190753783148L;
+	String idCard; // 车主身份证号码
+	 Date purcharseTime;// 购车日期
+	 String identifier;// 车辆识别码
 	//private String vehicleType;// 车型
-	private double emissions;//排量
-	private double guidePrice;// 官方指导价
-	private double invoicePrice;// 发票价格
-	private double purchaseTax;// 缴纳车辆购置税金额
-	/**
-	 * 无参构造方法。
-	 */
+	 double emissions;//排量
+	 double guidePrice;// 官方指导价
+	 double invoicePrice;// 发票价格
+	 double purchaseTax;// 缴纳车辆购置税金额
 	public VehiclePurchaseTax() {
 	}
-	/**
-	 * 有参构造方法。
-	 * @param idCard 车主身份证号码
-	 * @param purcharseTime 购车日期
-	 * @param identifier 车辆识别码
-	 * @param emissions 汽车排量
-	 * @param guidePrice 官方指导价
-	 * @param invoicePrice 发票价格	
-	 */
 	public VehiclePurchaseTax(String idCard, String identifier, double emissions, double guidePrice,
 			double invoicePrice) {		
 		this.idCard = idCard;
