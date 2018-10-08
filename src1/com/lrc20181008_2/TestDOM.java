@@ -16,6 +16,8 @@ public class TestDOM {
 		// 1、得到DOM解析器的工厂实例
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		try {
+			
+			
 			// 2、从DOM工厂获得DOM解析器
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			// 3、解析XML文档，得到一个Document，即DOM树
@@ -24,7 +26,8 @@ public class TestDOM {
 			NodeList GradeList = doc.getElementsByTagName("grade");
 			NodeList SubjectList = doc.getElementsByTagName("subject");
 			System.out.println("xml文档中共有" + 
-					 GradeList.getLength() + "个班级的信息");
+					 GradeList.getLength() + "个班级的信息"
+					 		+ "");
 			
 			
 			
@@ -35,7 +38,7 @@ public class TestDOM {
 				Node grade=  GradeList.item(i);
 				
 				Element element = (Element)  grade;//将节点强转为一个元素 
-				String attrValue = element.getAttribute("gradeid");
+				String attrValue = element.getAttribute("gradeid");//Attribute是属性的意思
 				//System.out.println("gradeid:" + attrValue);
 				
 				for (Node node =grade.getFirstChild(); node != null;node = node.getNextSibling()) { 
@@ -49,7 +52,8 @@ public class TestDOM {
 				System.out.println();
 			}
 			
-			
+			System.out.println( );
+			//循环输出科目的信息
 			System.out.println("xml文档中共有" + 
 					SubjectList.getLength() + "个科目的信息");
 			for (int j = 0; j <SubjectList.getLength(); j++) {
@@ -57,7 +61,7 @@ public class TestDOM {
 				Node Subject=  SubjectList.item(j);
 				
 				Element element = (Element)  Subject;//将节点强转为一个元素 
-				String attrValue = element.getAttribute("subjectName");
+				String attrValue = element.getAttribute("subjectName");//attrvaule是属性值的意思
 				//System.out.println("subjectName:" + attrValue);
 				
 				for (Node node =Subject.getFirstChild(); node != null;node = node.getNextSibling()) { 
