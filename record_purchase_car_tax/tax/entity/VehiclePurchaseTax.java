@@ -2,39 +2,43 @@ package cn.jbit.tax.entity;
 
 import java.util.Date;
 
-
 public class VehiclePurchaseTax implements java.io.Serializable {
 
-	 static final long serialVersionUID = -5870970190753783148L;
+	static final long serialVersionUID = -5870970190753783148L;
 	String idCard; // 车主身份证号码
-	 Date purcharseTime;// 购车日期
-	 String identifier;// 车辆识别码
-	//private String vehicleType;// 车型
-	 double emissions;//排量
-	 double guidePrice;// 官方指导价
-	 double invoicePrice;// 发票价格
-	 double purchaseTax;// 缴纳车辆购置税金额
+	Date purcharseTime;// 购车日期
+	String identifier;// 车辆识别码
+	// private String vehicleType;// 车型
+	double emissions;// 排量
+	double guidePrice;// 官方指导价
+	double invoicePrice;// 发票价格
+	double purchaseTax;// 缴纳车辆购置税金额
+
 	public VehiclePurchaseTax() {
 	}
+
 	public VehiclePurchaseTax(String idCard, String identifier, double emissions, double guidePrice,
-			double invoicePrice) {		
+			double invoicePrice) {
 		this.idCard = idCard;
 		this.identifier = identifier;
 		this.emissions = emissions;
 		this.guidePrice = guidePrice;
 		this.invoicePrice = invoicePrice;
-		if(emissions<=1.6)
-			this.purchaseTax=invoicePrice/(1+0.17)*0.075;
+		if (emissions <= 1.6)
+			this.purchaseTax = invoicePrice / (1 + 0.17) * 0.075;
 		else
-			this.purchaseTax=invoicePrice/(1+0.17)*0.1;
-		
+			this.purchaseTax = invoicePrice / (1 + 0.17) * 0.1;
+
 	}
+
 	public double getEmissions() {
 		return emissions;
 	}
+
 	public void setEmissions(double emissions) {
 		this.emissions = emissions;
 	}
+
 	public String getIdCard() {
 		return idCard;
 	}

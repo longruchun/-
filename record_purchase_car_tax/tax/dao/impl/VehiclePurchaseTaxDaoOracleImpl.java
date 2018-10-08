@@ -7,10 +7,6 @@ import cn.jbit.tax.dao.VehiclePurchaseTaxDao;
 import cn.jbit.tax.entity.VehiclePurchaseTax;
 
 public class VehiclePurchaseTaxDaoOracleImpl extends BaseDao implements VehiclePurchaseTaxDao {
-	/*
-	 * (non-Javadoc)
-	 * @see cn.jbit.tax.dao.VehiclePurchaseTaxDao#save(cn.jbit.tax.entity.VehiclePurchaseTax)
-	 */
 	public void save(VehiclePurchaseTax item) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
