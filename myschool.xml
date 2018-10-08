@@ -1,0 +1,46 @@
+﻿<?xml-stylesheet type="text/css" href="mycss.css"?>
+<myschool>
+   <grade>
+      <gradeId>1</gradeId>
+      <gradeName>s1</gradeName>
+   </grade>
+
+   <grade>
+      <gradeId>2</gradeId>
+      <gradeName>s2</gradeName>
+   </grade>
+
+   <grade>
+      <gradeId>3</gradeId>
+      <gradeName>y2</gradeName>
+   </grade>
+
+   <grade>
+      <gradeId>4</gradeId>
+      <gradeName>提升班</gradeName>
+   </grade>
+
+   <subject subjectNo="1">
+       <subjectName>走进Java编程世界</subjectName>
+       <classHour>40</classHour>
+       <gradeId>1</gradeId>
+   </subject>
+
+   <subject subjectNo="2">
+       <subjectName>Java Logic</subjectName>
+       <classHour>60</classHour>
+       <gradeId>1</gradeId>
+   </subject>
+
+   <subject subjectNo="3">
+       <subjectName>C#语言和数据库技术</subjectName>
+       <classHour>70</classHour>
+       <gradeId>1</gradeId>
+   </subject>
+
+   <subject subjectNo="4">
+       <subjectName>使用C#语言开发数据库应用系统</subjectName>
+       <classHour>36</classHour>
+       <gradeId>1</gradeId>
+   </subject>
+</myschool>

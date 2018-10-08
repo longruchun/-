@@ -1,6 +1,6 @@
-package com.hxzy.biz_interface;
+package com.lrc.biz_interface;
 
-import com.hxzy.entity.grade;
+import com.lrc.entity.grade;
 
 public interface IgradeBiz extends IBaseBiz<grade> {
 
