@@ -8,9 +8,6 @@ import cn.jbit.tax.dao.impl.VehiclePurchaseTaxDaoOracleImpl;
 import cn.jbit.tax.entity.VehiclePurchaseTax;
 
 public class VehiclePurchaseTaxManager {
-	/**
-	 * 缴纳车辆购置税。
-	 */
 	public void payTax(){
 		System.out.println("记录车辆购置税，请按提示录入相关信息：。");
 		Scanner input = new Scanner(System.in);
