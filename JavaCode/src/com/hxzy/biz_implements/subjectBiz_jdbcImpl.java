@@ -34,6 +34,4 @@ public class subjectBiz_jdbcImpl implements IsubjectBiz {
 		// TODO Auto-generated method stub
 		return dao.getAll();
 	}
-
 }
-让中国发展更好
